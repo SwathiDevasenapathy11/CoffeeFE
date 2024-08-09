@@ -100,7 +100,7 @@
         </div>
         
         <div class="pr_dt">
-            <i class="pi pi-arrow-circle-left" (click)="scrollLeft()"></i>
+            <!-- <i class="pi pi-arrow-circle-left" (click)="scrollLeft()"></i> -->
             <div class="show_products" *ngFor="let product of products.details">
                 <div class="image_pdt">
                     <img [src]="product.image">
@@ -112,9 +112,9 @@
                    <p class="rate">{{product.rate}}</p>
                 </div>
            </div>
-           <i class="pi pi-arrow-circle-right" (click)="scrollRight()"></i>
-
+           <!-- <i class="pi pi-arrow-circle-right" (click)="scrollRight()"></i> -->
         </div>
     </div>
    </div>
 </div>
+<app-footer></app-footer>
