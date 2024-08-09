@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from "../../../shared/components/header/header.component";
 import { NgFor } from '@angular/common';
+import { FooterComponent } from "../../../shared/components/footer/footer.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent , NgFor],
+  imports: [HeaderComponent, NgFor, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
