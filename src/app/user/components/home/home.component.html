@@ -1,0 +1,120 @@
+<app-header></app-header>
+<div class="home_page_design">
+   <div class="first_part_container">
+       <div class="phrases_container">
+           <h1>Take coffee over compliments</h1>
+            <p>“We want a lot of stuff; we’re not in great shape. We didn’t get a good night’s sleep. We’re a little depressed. Coffee solves all these problems in one delightful little cup.”</p>
+       </div>
+
+       <div class="side_image_container">
+           <img src="../../../../assets/Latte_with_smoke-removebg-preview.png">
+       </div>
+   </div>
+
+   <div class="second_part_container">
+       <div class="second_heading">
+           <p>A LOT CAN HAPPEN OVER COFFEE</p>
+       </div>
+
+       <div class="second_main_content">
+           <div class="first_one">
+               <h2>Our Story</h2>
+               <p>In 2020, I embarked on a journey to share my passion for coffee with the world, and thus, Mocha Magic was born in the heart of Coimbatore. As a proud businesswoman, I set out to create a unique space where coffee lovers could gather, savor, and indulge in the magic of perfectly brewed coffee. At Mocha Magic, every cup tells a story of dedication, craftsmanship, and a deep love for the art of coffee making. Welcome to our world of flavor, aroma, and community—welcome to Mocha Magic.</p>
+           </div>
+
+           <div class="second_one">
+               <h2>Our Mission</h2>
+               <p>As an Indian, I know the importance of starting the day with a good cup of coffee. Its taste can set the tone for the entire day. I founded Mocha Magic to bring joy and positivity to people's lives through exceptional coffee. Our mission is to make each day better for our customers. At Mocha Magic, we strive to craft the perfect cup that uplifts your spirit and makes every day a little brighter.</p>
+           </div>
+
+           <div class="third_one">
+               <h2>Our Craft</h2>
+               <p>At Mocha Magic, crafting the perfect cup of coffee is our passion. We source the finest beans and use meticulous brewing techniques to ensure every sip is a delight. Our dedication to quality and innovation drives us to create exceptional flavors that uplift your spirit. Every cup is made with care, reflecting our commitment to excellence. Join us at Mocha Magic, where every cup is a masterpiece and every visit is a memorable experience.</p>
+           </div>
+       </div>
+   </div>
+
+   <div class="third_part_container">
+      <div class="environment_heading">
+         <h2>CREATING SAFE WORLD FOR YOU AND YOUR COFFEE</h2>
+       </div>
+      
+        <div class="working_environment">
+           <div class="image1_container">
+              <div class="image1">
+                  <img src="../../../../assets/Wear gloves.jpg">
+              </div>
+              <div class="image1_content">
+                  <p>Our staff is always gloved</p>
+              </div>
+           </div>
+
+           <div class="image2_container">
+              <div class="image2">
+                  <img src="../../../../assets/Sanitize and wash.jpg">
+              </div>
+              <div class="image2_content">
+                  <p>Sanitized Hands, Cleaned Premises</p>
+              </div>
+
+           </div>
+
+           <div class="image3_container">
+              <div class="image3">
+                 <img src="../../../../assets/Original beans powder.jpg">
+              </div>
+
+              <div class="image3_content">
+                  <p>Freshly Ground Perfection</p>
+              </div>
+
+           </div>
+
+           <div class="image4_container">
+               <div class="image4">
+                   <img src="../../../../assets/Milk from own farm.jpg">
+               </div>
+
+               <div class="image4_content">
+                  <p>Farm-fresh milk daily</p>
+               </div>
+
+           </div>
+
+           <div class="image5_container">
+               <div class="image5">
+                  <img src="../../../../assets/Deliver with clean.jpg">
+               </div>
+
+               <div class="image5_content">
+                   <p>Carefully handled deliveries</p>
+               </div>
+           </div>
+        </div>
+   </div>
+
+   <div class="fourth_part_container">
+    <div class="full_container">
+        <div class="products">
+            <p>Popular Now</p>
+        </div>
+        
+        <div class="pr_dt">
+            <i class="pi pi-arrow-circle-left" (click)="scrollLeft()"></i>
+            <div class="show_products" *ngFor="let product of products.details">
+                <div class="image_pdt">
+                    <img [src]="product.image">
+                </div>
+       
+                <div class="prod_details">
+                   <p>{{product.name}}</p>
+                   <span>{{product.description}}</span>
+                   <p class="rate">{{product.rate}}</p>
+                </div>
+           </div>
+           <i class="pi pi-arrow-circle-right" (click)="scrollRight()"></i>
+
+        </div>
+    </div>
+   </div>
+</div>
